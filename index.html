@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>রেজিস্ট্রেশন প্রক্রিয়া</title>
+    <title>বন্ধু মহল ফর্ম</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h2 id="message">আপনার রেজিষ্ট্রেশন প্রক্রিয়াধীন...</h2>
+        <h2>বন্ধু মহল রেজিস্ট্রেশন ফর্ম</h2>
+        <form id="registrationForm">
+            <label for="name">নাম:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">ইমেইল:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">ফোন নম্বর:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">সাবমিট করুন</button>
+        </form>
+        <p id="confirmationMessage" style="display:none; color: green;">আপনার তথ্য সফলভাবে জমা হয়েছে!</p>
     </div>
     <script src="script.js"></script>
 </body>
